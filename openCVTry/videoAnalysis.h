@@ -14,7 +14,6 @@ private:
 	std::deque<cv::Mat> frames; 
 	void Analyze(cv::Mat frame);
 	void Buffer(cv::VideoCapture cap);
-	void Display();
 
 public:
 	VideoAnalysis();

@@ -128,9 +128,3 @@ void VideoAnalysis::Buffer(VideoCapture cap) {
 		std::cout << "Frame added \n";
 	}
 }
-/*
-Display the output of buffer
-*/
-void VideoAnalysis::Display() {
-
-}

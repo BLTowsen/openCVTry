@@ -12,7 +12,6 @@ private:
 	std::string haarcascade{ "C:\\Users\\lawra\\Desktop\\Coding Private\\C++\\opencv\\build\\etc\\haarcascades\\haarcascade_frontalface_alt.xml" };
 	std::string videoLocation{""} ;
 	std::deque<cv::Mat> frames; 
-	//std::mutex mtx;
 	void Analyze(cv::Mat frame);
 	void Buffer(cv::VideoCapture cap);
 	void Display();

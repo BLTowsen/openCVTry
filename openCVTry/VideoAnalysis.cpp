@@ -81,19 +81,6 @@ int VideoAnalysis::Video() {
 	}
 	//buffer to grab all frames out of memory before working with them
 	//Problem will arise if video is very long
-	/*while (true) {
-		Mat frame;
-		cap >> frame;
-		if (frame.empty()) {
-			break;
-		}
-		flip(frame, frame, 1);
-		//imshow("Frame", frame);
-		
-		frames.push_back(frame);//std::move(std::make_unique<Mat>(frame))
-		std::cout << "Frame added \n";
-		
-	}*/
 	this->Buffer(cap);
 
 
@@ -137,11 +124,8 @@ void VideoAnalysis::Buffer(VideoCapture cap) {
 			break;
 		}
 		flip(frame, frame, 1);
-		//imshow("Frame", frame);
-		//mtx.lock();
-		frames.push_back(frame);//std::move(std::make_unique<Mat>(frame))
+		frames.push_back(frame);
 		std::cout << "Frame added \n";
-		//mtx.unlock();
 	}
 }
 /*
